@@ -1,0 +1,151 @@
+/* 🎨 Barra de navegación con más personalidad */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background: var(--tertiary);
+    box-shadow: 0 3px 10px var(--shadow);
+    
+    z-index: 1000;
+    overflow: hidden;
+    padding: 14px 28px;
+}
+
+/* ✨ Logo con presencia */
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+}
+
+/* 🎨 Enlaces de navegación */
+.nav a:not(.logo a) {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--entry);
+    padding: 1px 30px;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 🎭 Efecto divertido al pasar el mouse */
+.nav a:not(.logo a):hover {
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+/* 📱 Oculta enlaces en móviles */
+@media (max-width: 700px) {
+    .nav a:not(.logo a) {
+        display: none;
+    }
+}
+
+.logo,
+#menu {
+    display: flex;
+    margin: auto var(--gap);
+}
+
+.logo {
+    flex-wrap: inherit;
+}
+
+/* ✨ Logo con presencia y estilo */
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Más grande para destacar */
+    font-weight: 500; /* Más grueso para resaltar */
+    color: var(--primary); /* Usa el gradiente o color principal */
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 🎭 Efecto sutil al pasar el mouse */
+.logo a:hover {
+    color: var(--secondary);
+}
+
+/* 📌 Ajustes para imágenes o iconos dentro del logo */
+.logo a img,
+.logo a svg {
+    display: inline-block;
+    vertical-align: middle;
+    pointer-events: none;
+    width: 36px; /* Ajusta según necesidad */
+    height: 36px;
+    border-radius: 8px; /* Bordes redondeados para suavizar */
+    margin-right: 10px; /* Espaciado entre ícono y texto */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🎭 Efecto de movimiento en imágenes del logo */
+.logo a:hover img,
+.logo a:hover svg {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+button#theme-toggle {
+    font-size: 26px;
+    margin: auto 4px;
+}
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+#menu li + li {
+    margin-inline-start: var(--gap);
+}
+
+#menu a {
+    font-size: 18px;
+}
+
+#menu .active {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+
+.lang-switch li,
+.lang-switch ul,
+.logo-switches {
+    display: inline-flex;
+    margin: auto 5px;
+}
+
+.lang-switch {
+    display: flex;
+    flex-wrap: inherit;
+}
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.logo-switches {
+    flex-wrap: inherit;
+}

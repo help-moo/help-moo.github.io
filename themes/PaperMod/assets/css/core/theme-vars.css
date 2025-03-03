@@ -1,0 +1,79 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 12px;
+
+    /* 🌤 Light Mode - Sofisticado y vibrante */
+    --theme: #f4f1ed; /* Blanco marfil con un toque cálido */
+    --entry: #ffffff; /* Puro blanco */
+    --primary: #162447; /* Azul medianoche elegante */
+    --secondary: #000000; /* Terracota sofisticado */
+    --tertiary: #007c9b; /* Azul petróleo profundo */
+    --quaternary: #ffc857; /* Amarillo ocre refinado */
+    --content: #2d2c5a; /* Azul oscuro con matices violetas */
+    --code-block-bg: #232323d1; /* Beige sutil */
+    --code-bg: #e4dfda; /* Arena suave */
+    --border: #cbc4be; /* Gris cálido */
+    --accent: linear-gradient(90deg, #ff6b6b, #ffa07a, #4a90e2, #6a5acd); /* Gradiente moderno */
+    --shadow: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+    /* 🌙 Dark Mode - Moderno y de alto contraste */
+    --theme: #0b0b17; /* Azul-negro profundo */
+    --entry: #1a1a2e; /* Azul tinta oscura */
+    --primary: #ffffff; /* Blanco puro */
+    --secondary: #f1b0c3; /* Magenta vibrante pero refinado */
+    --tertiary: #4682b4; /* Azul acero elegante */
+    --quaternary: #ffcc00; /* Dorado refinado */
+    --content: #d1d1e9; /* Lavanda grisáceo para suavidad */
+    --code-block-bg: #1b1e38; /* Azul noche profundo */
+    --code-bg: #2a2e4a; /* Azul grisáceo oscuro */
+    --border: #4a4e69; /* Gris azulado */
+    --accent: linear-gradient(90deg, #ff497d, #ff9966, #5a67d8, #8e44ad); /* Gradiente futurista */
+    --shadow: rgba(0, 0, 0, 0.35);
+}
+
+
+#theme-toggle {
+    background: var(--tertiary);
+    color: var(--theme);
+    border: none;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Oculta el icono no correspondiente */
+.dark #moon {
+    display: none;
+}
+
+.dark #sun {
+    display: inline-block;
+}
+
+#moon {
+    display: inline-block;
+}
+
+#sun {
+    display: none;
+}
+
+/* Inversión de colores */
+.light #theme-toggle {
+    background: var(--tertiary);
+    color: var(--theme);
+}
+
+.dark #theme-toggle {
+    background: var(--tertiary);
+    color: var(--theme);
+}
