@@ -1,7 +1,7 @@
 ---
 title: "Este es el segundo post"
 date: 2020-09-15T11:30:03+00:00
-#weight: 2
+weight: 2
 # aliases: ["/first"]
 tags: [""]
 author: ""
