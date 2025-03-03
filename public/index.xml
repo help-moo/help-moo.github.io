@@ -15,17 +15,17 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is the first post</title>
-      <link>http://localhost:1313/posts/primerpost/</link>
+      <link>http://localhost:1313/posts/post1/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/primerpost/</guid>
+      <guid>http://localhost:1313/posts/post1/</guid>
       <description>Esta es la descripción del primer post
 Esta es la descripción del primer post</description>
     </item>
     <item>
       <title>Este es el segundo post</title>
-      <link>http://localhost:1313/posts/segundo-post/</link>
+      <link>http://localhost:1313/posts/post2/post2/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/segundo-post/</guid>
+      <guid>http://localhost:1313/posts/post2/post2/</guid>
       <description>Esta es la descripción del segundo post.
 ¿Falta información?</description>
     </item>
