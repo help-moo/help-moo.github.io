@@ -1,7 +1,7 @@
 ---
 title: "This is the first post"
 date: 2020-09-15T11:30:03+00:00
-weight: 1
+#weight: 1
 # aliases: ["/first"]
 tags: ["música", "Matching Mole"]
 author: ""
