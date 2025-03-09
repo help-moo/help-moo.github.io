@@ -41,6 +41,10 @@
   </div>
   {{- end }}
 
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+  <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+  <script type="application/javascript"> littlefoot.default() </script>
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
