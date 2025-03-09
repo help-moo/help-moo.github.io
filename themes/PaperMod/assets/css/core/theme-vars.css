@@ -16,7 +16,7 @@
     --quaternary: #ffc857; /* Amarillo ocre refinado */
     --content: #2d2c5a; /* Azul oscuro con matices violetas */
     --code-block-bg: #232323d1; /* Beige sutil */
-    --code-bg: #e4dfda; /* Arena suave */
+    --code-bg: #c2bfbc; /* Arena suave */
     --border: #cbc4be; /* Gris cálido */
     --accent: linear-gradient(90deg, #ff6b6b, #ffa07a, #4a90e2, #6a5acd); /* Gradiente moderno */
     --shadow: rgba(0, 0, 0, 0.08);
@@ -31,8 +31,8 @@
     --tertiary: #4682b4; /* Azul acero elegante */
     --quaternary: #ffcc00; /* Dorado refinado */
     --content: #d1d1e9; /* Lavanda grisáceo para suavidad */
-    --code-block-bg: #1b1e38; /* Azul noche profundo */
-    --code-bg: #2a2e4a; /* Azul grisáceo oscuro */
+    --code-block-bg: #242848; /* Azul noche profundo */
+    --code-bg: #353858; /* Azul grisáceo oscuro */
     --border: #4a4e69; /* Gris azulado */
     --accent: linear-gradient(90deg, #ff497d, #ff9966, #5a67d8, #8e44ad); /* Gradiente futurista */
     --shadow: rgba(0, 0, 0, 0.35);

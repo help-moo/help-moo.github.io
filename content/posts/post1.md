@@ -1,6 +1,6 @@
 ---
 title: "This is the first post"
-date: 2020-09-15T11:30:03+00:00
+date: 2025-02-15T11:30:03+00:00
 weight: 1
 # aliases: ["/first"]
 tags: ["música", "Matching Mole"]
@@ -74,6 +74,7 @@ Y este es el final del post o quizás es el epílogo. O quizás es el video de l
 <br></br>
 
 Este sí es el final del post.
-<br></br>
 
-[^1]: Esta es una banda sobre la que se podrían escribir `str(cosas)`
+--- 
+
+[^1]: Esta es una banda sobre la que se podrían escribir [`str(cosas)`](#) 

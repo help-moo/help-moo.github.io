@@ -40,11 +40,17 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
-
-  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
-  <script src="themes/PaperMod/assets/js/littlefoot.js" type="application/javascript"></script>
-  <script type="application/javascript"> littlefoot.default() </script>
-
+  {{- $littlefootCSS := resources.Get "css/common/littlefoot.css" }}
+  <link rel="stylesheet" href="{{ $littlefootCSS.RelPermalink }}">
+  
+  {{- $littlefootJS := resources.Get "js/littlefoot.js" }}
+  <script src="{{ $littlefootJS.RelPermalink }}" type="application/javascript"></script>
+  <script type="application/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+          littlefoot.default();
+      });
+  </script>
+  
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

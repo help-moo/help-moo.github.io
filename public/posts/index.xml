@@ -14,6 +14,14 @@
     <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>This is the first post</title>
+      <link>http://localhost:1313/posts/post1/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post1/</guid>
+      <description>Esta es la descripción del primer post
+Esta es la descripción del primer post</description>
+    </item>
+    <item>
       <title>Este es el segundo post</title>
       <link>http://localhost:1313/posts/post2/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
@@ -22,12 +30,11 @@
 ¿Falta información?</description>
     </item>
     <item>
-      <title>This is the first post</title>
-      <link>http://localhost:1313/posts/post1/</link>
+      <title>Post #3</title>
+      <link>http://localhost:1313/posts/post3/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post1/</guid>
-      <description>Esta es la descripción del primer post
-Esta es la descripción del primer post</description>
+      <guid>http://localhost:1313/posts/post3/</guid>
+      <description>Nada</description>
     </item>
   </channel>
 </rss>
