@@ -75,4 +75,4 @@ Y este es el final del post o quizás es el epílogo. O quizás es el video de l
 Este sí es el final del post.
 
 
-[^1]: Esta es una banda sobre la que se podrían escribir `str(cosas)`
+[^1]: Esta es una banda sobre la que se podrían escribir `str(cosas)` ;(
