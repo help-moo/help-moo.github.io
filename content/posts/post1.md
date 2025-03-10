@@ -34,7 +34,6 @@ cover:
     hidden: false # only hide on current single page
     responsiveImages: true
 ---
----
 Esta es la primera linea del primer párrafo o quizás es el inicio del contenido del post. 
 
 Y esta es la letra de la canción _Signed Curtain_, de la banda _Matching Mole_ [^1]:
@@ -75,6 +74,5 @@ Y este es el final del post o quizás es el epílogo. O quizás es el video de l
 
 Este sí es el final del post.
 
---- 
 
-[^1]: Esta es una banda sobre la que se podrían escribir [`str(cosas)`](#) 
+[^1]: Esta es una banda sobre la que se podrían escribir `str(cosas)`

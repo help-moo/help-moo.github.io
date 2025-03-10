@@ -72,8 +72,28 @@
 }
 
 /* 🎭 Efecto sutil al pasar el mouse */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+    }
+    25% {
+        text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+    }
+    50% {
+        text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+    }
+    75% {
+        text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
+    }
+    100% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+    }
+}
+
 .logo a:hover {
-    color: var(--secondary);
+    color: white;
+    position: relative;
+    animation: glitch 5s infinite; /* Ajusté la velocidad a 0.8s */
 }
 
 /* 📌 Ajustes para imágenes o iconos dentro del logo */

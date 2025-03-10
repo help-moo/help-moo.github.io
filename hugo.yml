@@ -55,19 +55,19 @@ params:
     iconHeight: 50
 
   # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: 
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+  # profileMode:
+  #   enabled: false # needs to be explicitly set
+  #   title: 
+  #   subtitle: "This is subtitle"
+  #   imageUrl: "<img location>"
+  #   imageWidth: 120
+  #   imageHeight: 120
+  #   imageTitle: my image
+  #   buttons:
+  #     - name: Posts
+  #       url: posts
+  #     - name: Tags
+  #       url: tags
 
   # home-info mode
   homeInfoParams:
@@ -90,7 +90,7 @@ params:
 
   cover:
     hidden: false # hide everywhere but not in structured data
-    hiddenInList: false # hide on list pages and home
+    hiddenInList: true # hide on list pages and home
     hiddenInSingle: false # hide on single page
 
   # for search

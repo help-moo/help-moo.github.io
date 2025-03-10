@@ -13,6 +13,11 @@
       </span>
       {{- end }}
     </h1>
+    {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+    {{- if (.Param "ShowToc") }}
+    {{- partial "toc.html" . }}
+    {{- end }}
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}
@@ -27,12 +32,8 @@
     </div>
     {{- end }}
   </header>
-  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
-
+  <style>hr {color:var(--tertiary )}</style>
+  <hr><br>
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
@@ -40,6 +41,7 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+  <hr>
   {{- $littlefootCSS := resources.Get "css/common/littlefoot.css" }}
   <link rel="stylesheet" href="{{ $littlefootCSS.RelPermalink }}">
   

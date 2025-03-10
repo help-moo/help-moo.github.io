@@ -93,13 +93,20 @@
     font-size: 14px;
     margin-bottom: var(--gap);
     text-align: center;
+    padding: 0px;
+    display: flex; /* Para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .entry-cover img {
     border-radius: var(--radius);
     pointer-events: none;
-    width: 100%;
+    width: 65%;
+    align-content: center;
     height: auto;
+    padding: 0px;
+
 }
 
 .entry-cover a {

@@ -32,7 +32,6 @@ cover:
     hidden: false # only hide on current single page
     responsiveImages: true
 ---
----
 Lorem ipsum odor amet, consectetuer adipiscing elit. Est arcu euismod facilisis dis duis tincidunt, tristique nisi. Erat arcu euismod ligula eget eget? Nisi commodo est nisi efficitur aliquet. Finibus convallis ut taciti vitae ac morbi tortor rhoncus. Ac pharetra nam, pharetra enim hendrerit neque.
 
 Ac vitae semper cubilia volutpat dis primis et sem. Eleifend viverra turpis ut facilisi curabitur ultrices conubia. Id leo varius nascetur porttitor hendrerit, imperdiet fringilla netus. Amet fames dapibus a at euismod risus. Molestie venenatis habitasse ex mus, netus accumsan in libero. Mi suspendisse senectus odio purus phasellus lacinia ac?
