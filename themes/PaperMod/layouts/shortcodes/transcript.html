@@ -1,0 +1,5 @@
+<iframe 
+  src="/etst/{{ .Get "file" }}" 
+  width="100%" 
+  height="{{ with .Get "height" }}{{ . }}{{ else }}600{{ end }}">
+</iframe>
