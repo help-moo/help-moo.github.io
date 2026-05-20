@@ -72,8 +72,6 @@ Y este es el final del post o quizás es el epílogo. O quizás es el video de l
 <br></br>
 <br></br>
 
-También puedes ver el archivo relacionado aquí: [Animales en Wampis](/animales-wampis.html).
-
 Este sí es el final del post.
 
 
