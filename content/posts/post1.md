@@ -74,6 +74,8 @@ Y este es el final del post o quizás es el epílogo. O quizás es el video de l
 
 También puedes ver el archivo relacionado aquí: [Animales en Wampis](/animales-wampis.html).
 
+Y aquí está el glosario relacionado: [Glosario de salud Wampis](/glosario-wampis-v3.html).
+
 Este sí es el final del post.
 
 
