@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glosario Asháninka-Castellano</title>
+  <script src="./corpus-data.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <!-- Header principal del sitio -->
+  <header class="topbar">
+    <div class="brand">
+      <p class="kicker">Recurso pedagógico bilingüe</p>
+      <h1>Asháninka - Castellano</h1>
+      <p class="subtitle">Proyecto piloto de una aplicación web para uso educativo</p>
+    </div>
+    <nav class="site-nav" aria-label="Secciones del sitio">
+      <a class="nav-link" href="./app-piloto.html" aria-current="page">Inicio</a>
+      <a class="nav-link" href="./about.html">Acerca de</a>
+    </nav>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <!-- Contenido principal: buscador + índice -->
+  <main class="app-shell">
+    <section class="panel panel-sidebar">
+      <!-- Buscador fijo al hacer scroll -->
+      <div class="search-sticky">
+        <label class="search-label sr-only" for="search">Buscar</label>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5"></circle>
+              <path d="M15.8 15.8L20 20"></path>
+            </svg>
+          </span>
+          <input id="search" class="search" type="search" placeholder="Buscar en asháninka, castellano, notas y ejemplos..." autocomplete="off">
+        </div>
+      </div>
+
+      <!-- Lista de entradas -->
+      <div class="list" id="entry-list"></div>
+    </section>
+  </main>
+
+  <!-- Pie de página común -->
+  <footer class="site-footer">
+    <p><strong>Contacto:</strong> <a href="mailto:grupo.estudiolenguas@pucp.edu.pe">grupo.estudiolenguas@pucp.edu.pe</a></p>
+    <p><strong>Licencia:</strong> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noreferrer noopener">CC BY-NC-ND 4.0</a></p>
+  </footer>
+
+  <!-- Modal de detalle de entrada -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Cerrar">×</button>
+      <article id="modal-content"></article>
+    </section>
+  </div>
+</body>
+</html>

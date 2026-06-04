@@ -76,6 +76,8 @@ También puedes ver el archivo relacionado aquí: [Animales en Wampis](/animales
 
 Y aquí está el glosario relacionado: [Glosario de salud Wampis](/glosario-wampis-v3.html).
 
+Y también puedes abrir la página piloto aquí: [App piloto](/app-piloto.html).
+
 Este sí es el final del post.
 
 
