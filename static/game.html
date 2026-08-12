@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego | Glosario Asháninka-Castellano</title>
+  <script src="./corpus-data.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./game.js" defer></script>
+</head>
+<body>
+  <!-- Header principal del sitio -->
+  <header class="topbar">
+    <div class="brand">
+      <p class="kicker">Recurso pedagógico bilingüe</p>
+      <h1>Asháninka - Castellano</h1>
+      <p class="subtitle">Proyecto piloto de una aplicación web para uso educativo</p>
+    </div>
+    <nav class="site-nav" aria-label="Secciones del sitio">
+      <a class="nav-link" href="./app-piloto.html">Inicio</a>
+      <a class="nav-link" href="./game.html" aria-current="page">Juego</a>
+      <a class="nav-link" href="./about.html">Acerca de</a>
+    </nav>
+  </header>
+
+  <!-- Juego: se arma desde el corpus, sin preguntas escritas a mano -->
+  <main class="page-shell">
+    <section class="game-card" aria-labelledby="game-title">
+      <div class="game-intro">
+        <p class="kicker">Prueba de juego</p>
+        <h2 id="game-title">Adivina la palabra</h2>
+        <p>Elige un modo, responde y usa las pistas. Cada palabra permite tres intentos.</p>
+      </div>
+
+      <!-- Modos disponibles. Imagen usa por ahora la entrada kima. -->
+      <div class="game-modes" role="group" aria-label="Modos de juego">
+        <button class="mode-btn active" type="button" data-mode="ash-es">Asháninka → Castellano</button>
+        <button class="mode-btn" type="button" data-mode="es-ash">Castellano → Asháninka</button>
+        <button class="mode-btn" type="button" data-mode="audio-ash">Audio → Asháninka</button>
+        <button class="mode-btn" type="button" data-mode="image-ash">Imagen → Asháninka</button>
+      </div>
+
+      <div class="game-score" id="game-score" aria-live="polite"></div>
+
+      <article class="question-card" id="question-card" aria-live="polite">
+        <p class="tiny-label">Pregunta</p>
+        <div id="question-prompt" class="question-prompt"></div>
+        <div id="question-media" class="question-media"></div>
+      </article>
+
+      <form class="answer-form" id="answer-form">
+        <label class="answer-label" for="answer">Tu respuesta</label>
+        <input id="answer" class="answer-input" type="text" autocomplete="off">
+        <button class="primary-btn" type="submit">Responder</button>
+      </form>
+
+      <div class="game-feedback" id="game-feedback" aria-live="polite"></div>
+
+      <div class="game-actions">
+        <button class="secondary-btn" id="hint-btn" type="button">Pista</button>
+        <button class="secondary-btn" id="next-btn" type="button">Siguiente</button>
+        <button class="secondary-btn danger-btn" id="reset-score-btn" type="button">Reiniciar puntaje</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página común -->
+  <footer class="site-footer">
+    <p><strong>Contacto:</strong> <a href="mailto:grupo.estudiolenguas@pucp.edu.pe">grupo.estudiolenguas@pucp.edu.pe</a></p>
+    <p><strong>Licencia:</strong> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noreferrer noopener">CC BY-NC-ND 4.0</a></p>
+  </footer>
+</body>
+</html>
